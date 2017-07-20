@@ -27,3 +27,56 @@ npm install
 ```
 gulp
 ```
+
+----------
+
+## API(s)
+
+`URL : localhost:5000`
+
+----------
+Getting the users:
+```
+/users
+
+Method: GET
+
+Returns: List of users
+```
+----------
+Creating a user:
+```
+/users
+
+Method: POST
+
+{
+    "name": "asif",
+    "age": 22,
+    "address": "bangalore"
+}
+
+Returns: Success or error
+```
+----------
+Updating a user:
+```
+/users/:id
+
+Method: PUT
+
+{
+    "address": "india"
+}
+
+Returns: Success or error
+```
+----------
+Delete a user:
+```
+/users/:id
+
+Method: DELETE
+
+Returns: Success or error
+```
